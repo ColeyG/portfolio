@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden{
+	display:none;	
+}
+
+#canvas{
+  background-color:#0c0c0c;
+  display:block;
+}
