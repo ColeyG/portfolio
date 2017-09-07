@@ -1,11 +1,11 @@
 (function(){
-  // This is all you need for a given canvas element
+
   var canvas = document.getElementById('canvas');
   canvas.width=window.innerWidth;
   canvas.height=window.innerHeight;
   var c = canvas.getContext('2d');
   
-  function Circle(x,y,dx,dy,radius,color){//The uppercase C makes this a method
+  function Circle(x,y,dx,dy,radius,color){
     this.x=x;
     this.y=y;
     this.dx=dx;
@@ -26,11 +26,11 @@
       if(this.y-this.radius<0){this.dy=-this.dy}
       this.x+=this.dx;
       this.y+=this.dy;
-      this.draw();//Draws the updated circle
+      this.draw();
     }
   }
   
-  var circleArray=[];//declares all cirlces
+  var circleArray=[];
     var n=0;
   for (var i=0;i<200;i++){
     var colorArray=["rgba(40,56,69,.5)","rgba(242,212,146,.5)","rgba(166,58,80,.5)"];
@@ -42,13 +42,15 @@
     var color = colorArray[n];
     n++;
     if (n>2){n=0};
-    circleArray.push(new Circle(x,y,dx,dy,radius,color));// new {C}ircle makes the method above give us an object
+    circleArray.push(new Circle(x,y,dx,dy,radius,color));
   }
   function animate(){
     requestAnimationFrame(animate);
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
     c.clearRect(0,0,innerWidth,innerHeight);
     for(var i=0;i<circleArray.length;i++){
-      circleArray[i].update();//Force Updates all pieces of the circleArray
+      circleArray[i].update();
     }
   }
   animate();

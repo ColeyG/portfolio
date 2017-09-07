@@ -1,12 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*
+Font-Family: 'Playfair Display', Serif;
+Font-Size: 48px;
+Font-Family: 'Source Sans Pro', Sans-Serif;
+Font-Size: 16px;
+*/
+
 .hidden{
 	display:none;	
 }
-
 #canvas{
-  background-color:#0c0c0c;
+  background-color:#191919;
   position:absolute;
   z-index:-1;
 }
@@ -15,4 +21,22 @@
   height:100%;
   z-index:0;
   position:absolute;
+}
+#mainHeader{
+  width:100%;
+  height:100px;
+  background-color: rgba(255,0,0,.5);
+  margin-top:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  margin-left:30px;
+}
+#logo h2{
+  Font-Family: 'Playfair Display', Serif;
+  Font-Size: 48px;
+  font-style: italic;
+  color:white;
 }
