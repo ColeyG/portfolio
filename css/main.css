@@ -25,7 +25,6 @@ Font-Size: 16px;
 #mainHeader{
   width:100%;
   height:100px;
-  background-color: rgba(255,0,0,.5);
   margin-top:50px;
   display: flex;
   justify-content: space-between;
@@ -39,4 +38,57 @@ Font-Size: 16px;
   Font-Size: 48px;
   font-style: italic;
   color:white;
+}
+#mainNav{
+  display: flex;
+}
+.mainNavButton{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  Font-Size: 16px;
+  color:white;
+  transition:.2s;
+  margin-left:2px;
+  margin-right:2px;
+  margin-top:2px;
+  margin-bottom:2px;
+  border:2px solid #ffffff;
+  border-radius:3px;
+  padding:2px;
+  background-color:rgba(255, 255, 255, .3);
+  text-decoration: none;
+}
+.mainNavButton:last-child{
+  margin-right:10px;
+}
+.mainNavButton:hover:nth-child(1){
+  background-color:rgba(231, 61, 48, 0.69);
+}
+.mainNavButton:hover:nth-child(2){
+  background-color: rgba(246, 130, 31, .7);
+}
+.mainNavButton:hover:nth-child(3){
+  background-color: rgba(253, 220, 3, .7);
+}
+.mainNavButton:hover:nth-child(4){
+  background-color: rgba(58, 94, 170, .7);
+}
+.mainNavButton:hover:nth-child(5){
+  background-color: rgba(118, 198, 178, .7);
+}
+#buttonOn{
+  border-top:3px solid #2e2e2e;
+  border-bottom:3px solid #2E2E2E;
+  background-color:rgba(231, 61, 48, 0.69);
+}
+@media screen and (max-width:500px){
+  #mainNav{
+    display: flex;
+    flex-direction: column;
+  }
+  .mainNavButton:last-child{
+    margin-right:2px;
+  }
+  .mainNavButton{
+    padding-right:10px;
+  }
 }
