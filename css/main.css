@@ -36,6 +36,7 @@ body{
 }
 #logo{
   margin-left:30px;
+  width:25%;
 }
 #logo h2{
   Font-Family: 'Playfair Display', Serif;
@@ -100,7 +101,7 @@ body{
   width:70%;
   height:200px;
   margin-left:15%;
-  margin-top:100px;
+  margin-top:10%;
 }
 #typed{
   Font-Family: 'Source Sans Pro', Sans-Serif;
