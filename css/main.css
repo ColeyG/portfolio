@@ -162,3 +162,6 @@ body{
   height:30px;
   margin:5px;
 }
+#canvas1{background-size:cover;background-image: url('../images/canvas.png');}
+#canvas2{background-size:cover;background-image: url('../images/canvas.png');}
+#canvas3{background-size:cover;background-image: url('../images/canvas.png');}
