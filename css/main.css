@@ -131,4 +131,34 @@ body{
 #switcher{
   height:150px;
   background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#currentCanvas{
+  background-color: #191919;;
+  border-radius:50%;
+  width:70px;
+  height:70px;
+  margin:10px;
+  background-image: url('../images/canvas.png');
+  background-size: cover;
+}
+#currentTitle{
+  Font-Family: 'Playfair Display', Serif;
+  Font-Size: 1rem;
+  font-style: italic;
+}
+#canvasSwitcher{
+  display:flex;
+  width:300px;
+  justify-content: center;
+}
+.canvasButton{
+  background-color:#191919;;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  margin:5px;
 }
