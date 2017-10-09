@@ -285,3 +285,9 @@ a{
   margin-top:30px;
   margin-bottom:30px;
 }
+#footer{
+  height:75px;
+  width:100%;
+  background-color:black;
+  margin-top:15px;
+}

@@ -64,18 +64,22 @@
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let's talk</h2>
         <div class="formWrapper">
-        <form class="form" name="contact" method="post" action="email.php">
+        <form class="form" name="contact" method="post" action="index.php">
             <p class="italics">first name:</p>
-            <input class="input" type="text" name="first_name" maxlength="100" size="30">
+            <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
             <p class="italics">last name:</p>
-            <input class="input" type="text" name="last_name" maxlength="100" size="30">
+            <input placeholder="Doe" class="input" type="text" name="last_name" maxlength="100" size="30">
             <p class="italics">email:</p>
-            <input class="input" type="text" name="email" maxlength="150" size="40">
+            <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
-            <textarea class="input" type="message" name="email" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="What's your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit">
         </form>
+        </div>
     </div>
+    <footer id="footer">
+
+    </footer>
 </section>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
