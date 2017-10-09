@@ -32,6 +32,7 @@ a{
   color:white;
   text-decoration-color: white;
 }
+.italics{font-style: italic;}
 .white{color:white;}
 .black{color:black;}
 #canvas{
@@ -259,4 +260,28 @@ a{
   width:100%;
   background-color:black;
   margin-top:15px;
+}
+#contactCon{
+  min-height:150px;
+  width:100%;
+  background-color:white;
+  margin-top:15px;
+}
+#letsTalk{
+  margin-left:30%;
+}
+.formWrapper{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input{
+  
+}
+#submitButton{
+  width:100%;
+  margin-top:30px;
+  margin-bottom:30px;
 }
