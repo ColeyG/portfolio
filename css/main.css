@@ -14,6 +14,21 @@ Font-Size: 16px;
 body{
   background-color:#191919;
 }
+h2{
+  Font-Family: 'Playfair Display', Serif;
+  Font-Size: 36px;
+  margin:10px;
+  color:white;
+  font-style: italic;
+}
+p{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  Font-Size: 16px;
+  margin:10px;
+  text-indent:20px;
+}
+.white{color:white;}
+.black{color:black;}
 #canvas{
   background-color:#191919;
   position:absolute;
@@ -81,10 +96,12 @@ body{
 .mainNavButton:hover:nth-child(5){
   background-color: rgba(118, 198, 178, .7);
 }
-#buttonOn{
-  border-top:3px solid #2e2e2e;
-  border-bottom:3px solid #2E2E2E;
-  background-color:rgba(231, 61, 48, 0.69);
+#stickyTop{
+  position: fixed;
+  margin-left:90%;
+  display: none;
+  transition:.4s;
+  transform-style: cubic-bezier(.25,1,.54,.9);
 }
 @media screen and (max-width:500px){
   #mainNav{
@@ -126,7 +143,7 @@ body{
   margin-top: 100vh;
   height:100vh;
   width:100%;
-  background-color:#191919;;
+  background-color:#191919;
 }
 #switcher{
   height:150px;
@@ -165,3 +182,71 @@ body{
 #canvas1{background-size:cover;background-image: url('../images/canvas.png');}
 #canvas2{background-size:cover;background-image: url('../images/canvas.png');}
 #canvas3{background-size:cover;background-image: url('../images/canvas.png');}
+#about{
+  height:150px;
+  width:100%;
+  background-color:black;
+  margin-top:15px;
+}
+#library{
+  width:100%;
+  background-color:white;
+  margin-top:15px;
+}
+.cardBanner{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.cardBanner a{
+  text-decoration: none;
+}
+.card{
+  width:160px;
+  height:200px;
+  background-color:white;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:10px;
+  margin-right:10px;
+  border-radius:15px;
+  box-shadow:0px 3px 7px #333333;
+}
+.card:hover,.card:active{box-shadow:0px 0px 3px #333333;}
+.cardImg{
+  height:75px;
+  width:100%;
+  border-radius:15px 15px 0px 0px;
+  overflow:hidden;
+  border-bottom:4px solid #666666;
+}
+.cardImg img{
+  width:160px;
+}
+.cardTitle{
+  Font-Family: 'Playfair Display', Serif;
+  font-size:28pt;
+  text-align:center;
+  font-style: italic;
+  color:#333333;
+  margin:0px;
+}
+.cardSubTitle{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  margin-left:5px;
+  margin-right:5px;
+  color:#333333;
+  border-top:2px solid #333333;
+  height:66px;
+  overflow:hidden;
+  margin:0px;
+  font-size:10pt;
+}
+.cardDate{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  margin-top:-5px;
+  margin-left:15px;
+  color:#888888;
+  font-size:10pt;
+}
