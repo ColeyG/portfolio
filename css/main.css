@@ -8,6 +8,9 @@ Font-Family: 'Source Sans Pro', Sans-Serif;
 Font-Size: 16px;
 */
 
+/*
+Gorgeous Blue: #275fba;
+*/
 .hidden{
 	display:none;	
 }
@@ -23,8 +26,8 @@ h2{
 }
 p{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 16px;
-  margin:10px;
+  Font-Size: 20px;
+  margin:15px;
   text-indent:20px;
   padding-bottom:5px;
 }
@@ -290,4 +293,22 @@ a{
   width:100%;
   background-color:black;
   margin-top:15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.social{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  margin:10px;
+  transition:.2s;
+}
+.social:hover,.social:active{
+  padding-bottom:5px;
+}
+.social img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
 }
