@@ -71,6 +71,7 @@ a{
 }
 #mainNav{
   display: flex;
+  /*REMOVING NAV UNTIL FURTHER NOTICE*/visibility: hidden;
 }
 .mainNavButton{
   Font-Family: 'Source Sans Pro', Sans-Serif;
@@ -193,7 +194,7 @@ a{
 #about{
   min-height:150px;
   width:100%;
-  background-color:black;
+  background-color:#070707;
   margin-top:15px;
 }
 #library{
@@ -261,7 +262,7 @@ a{
 #resumeCon{
   min-height:150px;
   width:100%;
-  background-color:black;
+  background-color:#070707;
   margin-top:15px;
 }
 #contactCon{
@@ -291,7 +292,7 @@ a{
 #footer{
   height:75px;
   width:100%;
-  background-color:black;
+  background-color:#070707;
   margin-top:15px;
   display:flex;
   justify-content: center;
