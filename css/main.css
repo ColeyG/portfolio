@@ -53,7 +53,7 @@ a{
 }
 #mainHeader{
   width:100%;
-  height:100px;
+  height:20%;
   margin-top:50px;
   display: flex;
   justify-content: space-between;
@@ -127,23 +127,23 @@ a{
 }
 #container{
   width:70%;
-  height:200px;
+  height:30%;
   margin-left:15%;
   margin-top:10%;
 }
 #typed{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 64px;
+  Font-Size: 8vw;
   color:#ffffff;
   display:flex;
   justify-content: center;
   align-items:center;
-  height:100%;
+  height:30%;
   text-shadow: 0px 0px 8px #191919;
 }
 .typeChange{
   Font-Family: 'Playfair Display', Serif;
-  Font-Size: 48px;
+  Font-Size: 6vw;
   font-style: italic;
   color:#ffffff;
 }
