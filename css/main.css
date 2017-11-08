@@ -26,7 +26,7 @@ h2{
 }
 p{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 2rem;
+  Font-Size: 2em;
   margin:15px;
   text-indent:20px;
   padding-bottom:5px;
@@ -173,7 +173,7 @@ a{
 }
 #currentTitle{
   Font-Family: 'Playfair Display', Serif;
-  Font-Size: 1rem;
+  Font-Size: 1em;
   font-style: italic;
 }
 #canvasSwitcher{
