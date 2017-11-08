@@ -26,7 +26,7 @@ h2{
 }
 p{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 20px;
+  Font-Size: 2rem;
   margin:15px;
   text-indent:20px;
   padding-bottom:5px;
@@ -212,8 +212,8 @@ a{
   text-decoration: none;
 }
 .card{
-  width:160px;
-  height:200px;
+  width:240px;
+  height:300px;
   background-color:white;
   margin-top:5px;
   margin-bottom:15px;
@@ -224,18 +224,18 @@ a{
 }
 .card:hover,.card:active{box-shadow:0px 0px 3px #333333;}
 .cardImg{
-  height:75px;
+  height:112.5px;
   width:100%;
   border-radius:15px 15px 0px 0px;
   overflow:hidden;
   border-bottom:4px solid #666666;
 }
 .cardImg img{
-  width:160px;
+  height:100%;
 }
 .cardTitle{
   Font-Family: 'Playfair Display', Serif;
-  font-size:28pt;
+  font-size:42pt;
   text-align:center;
   font-style: italic;
   color:#333333;
@@ -247,17 +247,17 @@ a{
   margin-right:5px;
   color:#333333;
   border-top:2px solid #333333;
-  height:66px;
+  height:99px;
   overflow:hidden;
   margin:3px;
-  font-size:10pt;
+  font-size:15pt;
 }
 .cardDate{
   Font-Family: 'Source Sans Pro', Sans-Serif;
   margin-top:-7px;
   margin-left:15px;
   color:#888888;
-  font-size:10pt;
+  font-size:15pt;
 }
 #resumeCon{
   min-height:150px;
@@ -281,16 +281,13 @@ a{
   align-items: center;
   flex-direction: column;
 }
-.input{
-  
-}
 #submitButton{
   width:100%;
   margin-top:30px;
   margin-bottom:30px;
 }
 #footer{
-  height:75px;
+  height:125px;
   width:100%;
   background-color:#070707;
   margin-top:15px;
@@ -299,8 +296,8 @@ a{
   align-items: center;
 }
 .social{
-  width:40px;
-  height:40px;
+  width:80px;
+  height:80px;
   border-radius: 50%;
   margin:10px;
   transition:.2s;
@@ -309,8 +306,8 @@ a{
   padding-bottom:5px;
 }
 .social img{
-  width:40px;
-  height:40px;
+  width:80px;
+  height:80px;
   border-radius:50%;
 }
 @keyframes rocker{

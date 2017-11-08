@@ -1,4 +1,6 @@
 (function(){
+    var rocker=document.getElementById('downRockerButton');
+    var scroll=window.innerHeight;
     var options = {
         strings: [
         "I am a <span class='typeChange'>writer,</span>^1000",
@@ -14,6 +16,11 @@
         Code is found at: https://github.com/mattboldt/typed.js/*/
       }
       
-      var typed = new Typed(".moving", options);
-      
+    var typed = new Typed(".moving", options);
+    
+    function down(){
+        window.scrollTo({top: scroll, left: 0, behavior: 'smooth' });
+    }
+
+    rocker.addEventListener('click',down,false);
 })();
