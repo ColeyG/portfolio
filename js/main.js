@@ -18,7 +18,8 @@
       
     var typed = new Typed(".moving", options);
     
-    function down(){
+    function down(e){
+        e.preventDefault();
         window.scrollTo({top: scroll, left: 0, behavior: 'smooth' });
     }
 
