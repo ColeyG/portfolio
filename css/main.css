@@ -8,17 +8,42 @@ Font-Family: 'Source Sans Pro', Sans-Serif;
 Font-Size: 16px;
 */
 
+/*
+Gorgeous Blue: #275fba;
+*/
 .hidden{
 	display:none;	
 }
 body{
   background-color:#191919;
 }
+h2{
+  Font-Family: 'Playfair Display', Serif;
+  Font-Size: 36px;
+  margin:10px;
+  color:white;
+  font-style: italic;
+}
+p{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  Font-Size: 2em;
+  margin:15px;
+  text-indent:20px;
+  padding-bottom:5px;
+}
+a{
+  color:white;
+  text-decoration-color: white;
+}
+.italics{font-style: italic;}
+.white{color:white;}
+.black{color:black;}
 #canvas{
   background-color:#191919;
   position:absolute;
   z-index:-1;
   max-width: 100%;
+  border-bottom:3px solid rgb(15, 15, 15);
 }
 #onTop{
   width:100%;
@@ -28,7 +53,7 @@ body{
 }
 #mainHeader{
   width:100%;
-  height:100px;
+  height:20%;
   margin-top:50px;
   display: flex;
   justify-content: space-between;
@@ -46,6 +71,7 @@ body{
 }
 #mainNav{
   display: flex;
+  /*REMOVING NAV UNTIL FURTHER NOTICE*/visibility: hidden;
 }
 .mainNavButton{
   Font-Family: 'Source Sans Pro', Sans-Serif;
@@ -80,10 +106,12 @@ body{
 .mainNavButton:hover:nth-child(5){
   background-color: rgba(118, 198, 178, .7);
 }
-#buttonOn{
-  border-top:3px solid #2e2e2e;
-  border-bottom:3px solid #2E2E2E;
-  background-color:rgba(231, 61, 48, 0.69);
+#stickyTop{
+  position: fixed;
+  margin-left:90%;
+  display: none;
+  transition:.4s;
+  transform-style: cubic-bezier(.25,1,.54,.9);
 }
 @media screen and (max-width:500px){
   #mainNav{
@@ -99,23 +127,23 @@ body{
 }
 #container{
   width:70%;
-  height:200px;
+  height:30%;
   margin-left:15%;
   margin-top:10%;
 }
 #typed{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 64px;
+  Font-Size: 8vw;
   color:#ffffff;
   display:flex;
   justify-content: center;
   align-items:center;
-  height:100%;
+  height:30%;
   text-shadow: 0px 0px 8px #191919;
 }
 .typeChange{
   Font-Family: 'Playfair Display', Serif;
-  Font-Size: 48px;
+  Font-Size: 6vw;
   font-style: italic;
   color:#ffffff;
 }
@@ -123,7 +151,189 @@ body{
   z-index:0;
   position:absolute;
   margin-top: 100vh;
-  height:100vh;
   width:100%;
+  background-color:#191919;
+}
+#switcher{
+  height:150px;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#currentCanvas{
+  background-color: #191919;;
+  border-radius:50%;
+  width:70px;
+  height:70px;
+  margin:10px;
+  background-image: url('../images/canvas.png');
+  background-size: cover;
+}
+#currentTitle{
+  Font-Family: 'Playfair Display', Serif;
+  Font-Size: 1em;
+  font-style: italic;
+}
+#canvasSwitcher{
+  display:flex;
+  width:300px;
+  justify-content: center;
+}
+.canvasButton{
   background-color:#191919;;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  margin:5px;
+}
+#canvas1{background-size:cover;background-image: url('../images/canvas.png');}
+#canvas2{background-size:cover;background-image: url('../images/canvas.png');}
+#canvas3{background-size:cover;background-image: url('../images/canvas.png');}
+#about{
+  min-height:150px;
+  width:100%;
+  background-color:#070707;
+  margin-top:15px;
+}
+#library{
+  width:100%;
+  background-color:white;
+  margin-top:15px;
+}
+.cardBanner{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.cardBanner a{
+  text-decoration: none;
+}
+.card{
+  width:240px;
+  height:300px;
+  background-color:white;
+  margin-top:5px;
+  margin-bottom:15px;
+  margin-left:10px;
+  margin-right:10px;
+  border-radius:15px;
+  box-shadow:0px 3px 7px #333333;
+}
+.card:hover,.card:active{box-shadow:0px 0px 3px #333333;}
+.cardImg{
+  height:112.5px;
+  width:100%;
+  border-radius:15px 15px 0px 0px;
+  overflow:hidden;
+  border-bottom:4px solid #666666;
+}
+.cardImg img{
+  height:100%;
+}
+.cardTitle{
+  Font-Family: 'Playfair Display', Serif;
+  font-size:42pt;
+  text-align:center;
+  font-style: italic;
+  color:#333333;
+  margin:0px;
+}
+.cardSubTitle{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  margin-left:5px;
+  margin-right:5px;
+  color:#333333;
+  border-top:2px solid #333333;
+  height:99px;
+  overflow:hidden;
+  margin:3px;
+  font-size:15pt;
+}
+.cardDate{
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  margin-top:-7px;
+  margin-left:15px;
+  color:#888888;
+  font-size:15pt;
+}
+#resumeCon{
+  min-height:150px;
+  width:100%;
+  background-color:#070707;
+  margin-top:15px;
+}
+#contactCon{
+  min-height:150px;
+  width:100%;
+  background-color:white;
+  margin-top:15px;
+}
+#letsTalk{
+  margin-left:30%;
+}
+.formWrapper{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#submitButton{
+  width:100%;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+#footer{
+  height:125px;
+  width:100%;
+  background-color:#070707;
+  margin-top:15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.social{
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  margin:10px;
+  transition:.2s;
+}
+.social:hover,.social:active{
+  padding-bottom:5px;
+}
+.social img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+}
+@keyframes rocker{
+  0%{margin-top:0px;}
+  50%{margin-top:20px;}
+  100%{margin-top:0px;}
+}
+#downRockerHold{
+  width:100%;
+  height:100px;
+  margin-top:10vh;
+  display:flex;
+  justify-content: center;
+}
+#downRocker{
+  height:80px;
+  width:80px;
+  animation-name: rocker;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  opacity:.5;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#downRocker img{
+  width:40px;
+  height:40px;
 }
