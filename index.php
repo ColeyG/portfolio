@@ -74,7 +74,7 @@
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
-        <form class="form" name="contact" method="post" action="index.php">
+        <form class="form" name="contact" method="post" action="form.php">
             <p class="italics">first name:</p>
             <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
             <p class="italics">last name:</p>
