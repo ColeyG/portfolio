@@ -14,7 +14,7 @@
         $first = $_POST['first_name'];
         $last = $_POST['last_name'];
         $message = $_POST['message'];
-        $body = $first . " " . $last . " says: " . $message;
+        $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
         mail($to,$subject,$body);
     
