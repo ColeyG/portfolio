@@ -8,6 +8,8 @@
 </head>
 <body>
     <?php
+    if(isset($_POST['submitBut'])){
+    
         $to = "cole@colegeerts.com";
         $email = $_POST['email'];
         $subject = $email ." - Message from your DotCom.";
@@ -17,7 +19,7 @@
         $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
         mail($to,$subject,$body);
-    
+    }
     ?>
 </body>
 </html>

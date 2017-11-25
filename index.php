@@ -83,7 +83,7 @@
             <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
             <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
-            <input id="submitButton" class="input" type="submit" value="submit">
+            <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
         </div>
     </div>
