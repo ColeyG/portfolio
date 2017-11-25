@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Cole Geerts' Works</title>
+<title>Cole Geerts&#39; Works</title>
 <meta name="theme-color" content="#191919" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -49,7 +49,7 @@
     </div>
     <div id="about">
         <h2>What I Do</h2>
-        <p class="white">I'm Cole Geerts and I am a Web Developer out of London Ontario. I've been learning and refining my skills for a little over a year now and have a lot of active projects that I am interested in. Below are my project quick-link cards that thread off to different parts of the internet that I am involved in. I primarily write small projects on my <a href="https://codepen.io/ColeyG/">codepen</a> and <a href="https://github.com/ColeyG">github</a> accounts respectively but you'll see my main muses below. On top of that you'll see some of my work I've collaborated on. Please take a look and do get in touch! Keep in mind I <span class="italics">am</span> accepting clients and <span class="italics">will</span> work on your projects so do not hesitate to talk about your ideas.</p>
+        <p class="white">I&#39;m Cole Geerts and I am a Web Developer out of London Ontario. I've been learning and refining my skills for a little over a year now and have a lot of active projects that I am interested in. Below are my project quick-link cards that thread off to different parts of the internet that I am involved in. I primarily write small projects on my <a href="https://codepen.io/ColeyG/">codepen</a> and <a href="https://github.com/ColeyG">github</a> accounts respectively but you'll see my main muses below. On top of that you'll see some of my work I&#39;ve collaborated on. Please take a look and do get in touch! Keep in mind I <span class="italics">am</span> accepting clients and <span class="italics">will</span> work on your projects so do not hesitate to talk about your ideas.</p>
     </div>
     <div id="library">
         <h2 class="black">My Projects</h2>
@@ -68,13 +68,13 @@
     </div>
     <div id="resumeCon">
         <h2>Resum&#233</h2>
-        <p class="white">My work and study comprises of all things vaguely "full stack" as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
+        <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
         <a href="resume.html"><p>See my full Resum&#233 here</p></a>
     </div>
     <div id="contactCon">
-        <h2 id="letsTalk" class="black">Let's talk:</h2>
+        <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
-        <form class="form" name="contact" method="post" action="index.php">
+        <form class="form" name="contact" method="post" action="form.php">
             <p class="italics">first name:</p>
             <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
             <p class="italics">last name:</p>
@@ -82,8 +82,8 @@
             <p class="italics">email:</p>
             <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
-            <textarea placeholder="What's your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
-            <input id="submitButton" class="input" type="submit" value="Submit">
+            <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
+            <input id="submitButton" class="input" type="submit" value="submit">
         </form>
         </div>
     </div>
@@ -92,6 +92,9 @@
         <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png"></div></a>
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
+    <div id="versioning">
+        <p>version 0.81 d</p>
+    </div>
 </section>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>

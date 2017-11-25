@@ -337,3 +337,14 @@ a{
   width:40px;
   height:40px;
 }
+#versioning{
+  background-color: #070707;
+  color:rgb(26, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#versioning p{
+  margin:0 auto;
+  font-size: .80rem;
+}
