@@ -93,7 +93,7 @@
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.81 d</p>
+        <p>version 0.84</p>
     </div>
 </section>
 <script src="js/canvasCircle.js"></script>

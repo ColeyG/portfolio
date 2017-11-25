@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cole Contact Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/form.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
     <?php
@@ -21,5 +25,6 @@
         mail($to,$subject,$body);
     }
     ?>
+<script src="js/redirect.js"></script>
 </body>
 </html>
