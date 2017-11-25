@@ -8,13 +8,16 @@
 </head>
 <body>
     <?php
-    if(isset($_POST['submit'])){
         $to = "cole@colegeerts.com";
-        $subject = ($_POST['first_name']);
-        $body = "memes";
+        $email = $_POST['email'];
+        $subject = $email ." - Message from your DotCom.";
+        $first = $_POST['first_name'];
+        $last = $_POST['last_name'];
+        $message = $_POST['message'];
+        $body = $first . " " . $last . " says: " . $message;
 
         mail($to,$subject,$body);
-    }
+    
     ?>
 </body>
 </html>
