@@ -111,6 +111,9 @@
         <p>version 0.84</p>
     </div>
 </section>
+<section id="lightBox">
+
+</section>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
