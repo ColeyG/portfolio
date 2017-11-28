@@ -1,6 +1,6 @@
 (function(){
     function redir(){
-        window.location.href="index.php";
+        window.location.href="index2.php";
     }
     redir();
 })();

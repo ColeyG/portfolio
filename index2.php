@@ -108,17 +108,18 @@
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.85</p>
+        <p>version 0.84</p>
     </div>
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out. You will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <p>Thanks for reaching out. You will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web. I appreciate all of your words.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
