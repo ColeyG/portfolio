@@ -157,7 +157,7 @@ a{
 #switcher{
   height:150px;
   background-color: white;
-  display:flex;
+  display:none;/*Reinitialize after more bgs are implemented*/
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -229,9 +229,12 @@ a{
   border-radius:15px 15px 0px 0px;
   overflow:hidden;
   border-bottom:4px solid #666666;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardImg img{
-  height:100%;
+  width:100%;
 }
 .cardTitle{
   Font-Family: 'Playfair Display', Serif;

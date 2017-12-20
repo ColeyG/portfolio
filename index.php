@@ -70,12 +70,20 @@
         <h2 class="black">My Projects</h2>
         <section class="cardBanner">
             <!--Start of the card-->
-            <a href="#">
+            <a href="https://github.com/ColeyG/planets">
               <div class="card">
-                <div class="cardImg"><img src="images/canvas.png"></div>
-                <h2 class="cardTitle">title</h2>
-                <h2 class="cardSubTitle">subtitle description goes here, explain the project within four lines minumum and lowercase.</h2>
-                <h2 class="cardDate">august, 2009</h2>
+                <div class="cardImg"><img src="images/projectHeaders/planets.png"></div>
+                <h2 class="cardTitle">planets</h2>
+                <h2 class="cardSubTitle">This experiment is meant to play with game inputs in an HTML 5 canvas elements. It registers keypresses and handles inputs.</h2>
+                <h2 class="cardDate">since october, 2017</h2>
+              </div>  
+            </a>
+            <a href="https://github.com/ColeyG/photoPortfolio">
+              <div class="card">
+                <div class="cardImg"><img src="images/projectHeaders/bbstudios.png"></div>
+                <h2 class="cardTitle">gallery</h2>
+                <h2 class="cardSubTitle">This project is to be a site that one could populate with a gallery. As this progresses it will include cms features.</h2>
+                <h2 class="cardDate">since november, 2017</h2>
               </div>  
             </a>
             <!--End of the card-->
@@ -108,12 +116,12 @@
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.85</p>
+        <p>version 0.86</p>
     </div>
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out. You will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <p>Thanks for reaching out. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
