@@ -136,5 +136,6 @@
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+<script src="js/popup.js"></script>
 </body>
 </html>
