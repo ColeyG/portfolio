@@ -86,6 +86,14 @@
                 <h2 class="cardDate">since november, 2017</h2>
               </div>  
             </a>
+            <a href="https://github.com/ColeyG/fullCanvasSplash">
+              <div class="card">
+                <div class="cardImg"><img src="images/projectHeaders/cgeerts.png"></div>
+                <h2 class="cardTitle">my site</h2>
+                <h2 class="cardSubTitle">A link to the repository for this site. My favorite work in progress.</h2>
+                <h2 class="cardDate">since july, 2017</h2>
+              </div>  
+            </a>
             <!--End of the card-->
           </section>
     </div>
