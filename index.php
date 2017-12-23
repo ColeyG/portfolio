@@ -7,9 +7,13 @@
         $first = $_POST['first_name'];
         $last = $_POST['last_name'];
         $message = $_POST['message'];
+        $address = $_POST['address'];
+
         $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
+        if($address===""){
         mail($to,$subject,$body);
+        }
     }
 ?>
 
@@ -129,7 +133,7 @@
             <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
             <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
-            <textarea placeholder="What is your perogative?" class="hidden" type="message" name="snatch" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
         </div>
