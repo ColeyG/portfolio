@@ -124,7 +124,7 @@
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.86</p>
+        <p>version 0.87</p>
     </div>
 </section>
 <section id="lightBox">
