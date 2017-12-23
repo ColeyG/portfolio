@@ -27,7 +27,7 @@
 </head>
 <body>
     <?php
-    if(isset($_POST['submitBut'])){
+    if(isset($_GET['submitBut'])){
     
         $to = "cole@colegeerts.com";
         $email = $_POST['email'];
@@ -40,6 +40,6 @@
         mail($to,$subject,$body);
     }
     ?>
-<script src="js/redirect.js"></script>
+<script src="js/redirct.js"></script>
 </body>
 </html>

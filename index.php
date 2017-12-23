@@ -1,3 +1,18 @@
+<?php
+    if(isset($_POST['submitBut'])){
+    
+        $to = "cole@colegeerts.com";
+        $email = $_POST['email'];
+        $subject = $email ." - Message from your DotCom.";
+        $first = $_POST['first_name'];
+        $last = $_POST['last_name'];
+        $message = $_POST['message'];
+        $body = $first . " " . $last . " at " . $email . " says: " . $message;
+
+        mail($to,$subject,$body);
+    }
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -105,7 +120,7 @@
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
-        <form class="form" name="contact" method="post" action="form.php">
+        <form class="form" name="contact" method="post" action="index.php">
             <p class="italics">first name:</p>
             <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
             <p class="italics">last name:</p>
@@ -114,6 +129,7 @@
             <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
             <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="What is your perogative?" class="hidden" type="message" name="snatch" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
         </div>
