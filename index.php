@@ -14,6 +14,8 @@
         if($address===""){
         mail($to,$subject,$body);
         }
+
+        $check = "check";
     }
 ?>
 
@@ -45,6 +47,7 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
+<p id="check" class="hidden"><?php echo $check?></p>
 <canvas id="canvas"></canvas>
 <section id="onTop">
     <header id="mainHeader">
@@ -149,10 +152,11 @@
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <p>Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
+<script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
