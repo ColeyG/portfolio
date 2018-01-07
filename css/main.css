@@ -243,6 +243,10 @@ a{
   font-style: italic;
   color:#333333;
   margin:0px;
+  width:100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .cardSubTitle{
   Font-Family: 'Source Sans Pro', Sans-Serif;
@@ -254,6 +258,7 @@ a{
   overflow:hidden;
   margin:3px;
   font-size:15pt;
+  
 }
 .cardDate{
   Font-Family: 'Source Sans Pro', Sans-Serif;
