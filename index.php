@@ -13,10 +13,38 @@
 
         if($address===""){
         mail($to,$subject,$body);
-        }
-
-        $check = "check";
     }
+
+    $check = "check";
+}
+    
+$user = 'root';
+$password = 'root';
+$db = 'db_portfolio';
+$host = 'localhost';
+$port = 3306;
+
+$link = mysqli_init();
+$success = mysqli_real_connect(
+   $link, 
+   $host, 
+   $user, 
+   $password, 
+   $db,
+   $port
+);
+
+
+  if(mysqli_connect_errno()){
+       printf("Connection failed: %s\n", mysqli_connect_error());
+    exit();
+  }
+  $query="SELECT project_name_short FROM `tbl_projects`";
+  $get=mysqli_query($link,$query);
+  $result=mysqli_fetch_assoc($get);
+
+  mysqli_close($link);
+
 ?>
 
 <!doctype html>
@@ -52,14 +80,6 @@
 <section id="onTop">
     <header id="mainHeader">
         <div id="logo"><img src="images/logo.svg"></div>
-        <nav id="mainNav">
-            <a class="mainNavButton" href="#">Home</a>
-            <a class="mainNavButton" href="#">About</a>
-            <a class="mainNavButton" href="#">Library</a>
-            <a class="mainNavButton" href="#">Resume</a>
-            <a class="mainNavButton" href="#">Contact</a>
-        </nav>
-        <a class="mainNavButton" id="stickyTop" href="#">^Top^</a>
     </header>
     <section id="container">
         <div id="typed">
@@ -96,7 +116,7 @@
               <div class="card">
                 <div class="cardImg"><img src="images/projectHeaders/planets.png"></div>
                 <h2 class="cardTitle">planets</h2>
-                <h2 class="cardSubTitle">This experiment is meant to play with game inputs in an HTML 5 canvas elements. It registers keypresses and handles inputs.</h2>
+                <h2 class="cardSubTitle">This experiment is meant to play with game inputs in an HTML 5 canvas elements. It registers key presses and handles inputs.</h2>
                 <h2 class="cardDate">since october, 2017</h2>
               </div>  
             </a>
@@ -156,6 +176,9 @@
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
+<?php
+    echo $result;
+?>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
