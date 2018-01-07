@@ -41,7 +41,15 @@ $success = mysqli_real_connect(
   }
   $query="SELECT project_name_short FROM `tbl_projects`";
   $get=mysqli_query($link,$query);
-  $result=mysqli_fetch_assoc($get);
+
+  while ($result = mysqli_fetch_assoc($get)) {
+    //echo $movResult['movies_id'];
+    $jsonResult = json_encode($result);
+    $grpResult .=$jsonResult.",";
+    
+}   
+    $grpResult=substr($grpResult,0,-1);
+    $grpResult="[".$grpResult."]";
 
   mysqli_close($link);
 
@@ -177,7 +185,7 @@ $success = mysqli_real_connect(
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
 <?php
-    echo $result;
+    echo $grpResult;
 ?>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
