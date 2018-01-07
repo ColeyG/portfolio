@@ -1,3 +1,24 @@
+<?php
+    if(isset($_POST['submitBut'])){
+    
+        $to = "cole@colegeerts.com";
+        $email = $_POST['email'];
+        $subject = $email ." - Message from your DotCom.";
+        $first = $_POST['first_name'];
+        $last = $_POST['last_name'];
+        $message = $_POST['message'];
+        $address = $_POST['address'];
+
+        $body = $first . " " . $last . " at " . $email . " says: " . $message;
+
+        if($address===""){
+        mail($to,$subject,$body);
+        }
+
+        $check = "check";
+    }
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -26,6 +47,7 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
+<p id="check" class="hidden"><?php echo $check?></p>
 <canvas id="canvas"></canvas>
 <section id="onTop">
     <header id="mainHeader">
@@ -105,7 +127,7 @@
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
-        <form class="form" name="contact" method="post" action="form.php">
+        <form class="form" name="contact" method="post" action="index.php">
             <p class="italics">first name:</p>
             <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
             <p class="italics">last name:</p>
@@ -114,6 +136,7 @@
             <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
             <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
         </div>
@@ -124,15 +147,16 @@
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.86</p>
+        <p>version 0.87</p>
     </div>
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <p>Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
+<script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
