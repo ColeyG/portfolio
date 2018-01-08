@@ -12,7 +12,9 @@
         $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
         if($address===""){
-        mail($to,$subject,$body);
+            if(isset($_POST['first_name'])){
+            mail($to,$subject,$body);
+            }
     }
 
     $check = "check";
@@ -149,7 +151,7 @@ $success = mysqli_real_connect(
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.9</p>
+        <p>version 0.91</p>
     </div>
 </section>
 <section id="lightBox">
