@@ -119,32 +119,6 @@ $success = mysqli_real_connect(
     <div id="library">
         <h2 class="black">My Projects</h2>
         <section class="cardBanner">
-            <!--Start of the card-->
-            <a href="https://github.com/ColeyG/planets">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/planets.png"></div>
-                <h2 class="cardTitle">planets</h2>
-                <h2 class="cardSubTitle">This experiment is meant to play with game inputs in an HTML 5 canvas elements. It registers key presses and handles inputs.</h2>
-                <h2 class="cardDate">since october, 2017</h2>
-              </div>  
-            </a>
-            <a href="https://github.com/ColeyG/photoPortfolio">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/bbstudios.png"></div>
-                <h2 class="cardTitle">gallery</h2>
-                <h2 class="cardSubTitle">This project is to be a site that one could populate with a gallery. As this progresses it will include cms features.</h2>
-                <h2 class="cardDate">since november, 2017</h2>
-              </div>  
-            </a>
-            <a href="https://github.com/ColeyG/fullCanvasSplash">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/cgeerts.png"></div>
-                <h2 class="cardTitle">my site</h2>
-                <h2 class="cardSubTitle">A link to the repository for this site. My favorite work in progress.</h2>
-                <h2 class="cardDate">since july, 2017</h2>
-              </div>  
-            </a>
-            <!--End of the card-->
           </section>
     </div>
     <div id="resumeCon">
@@ -175,7 +149,7 @@ $success = mysqli_real_connect(
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.87</p>
+        <p>version 0.9</p>
     </div>
 </section>
 <section id="lightBox">
