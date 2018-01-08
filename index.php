@@ -39,7 +39,7 @@ $success = mysqli_real_connect(
        printf("Connection failed: %s\n", mysqli_connect_error());
     exit();
   }
-  $query="SELECT project_name_short FROM `tbl_projects`";
+  $query="SELECT project_name_short, project_name_long, project_image, project_desc, project_link, project_date FROM `tbl_projects` ORDER BY project_date DESC";
   $get=mysqli_query($link,$query);
 
   while ($result = mysqli_fetch_assoc($get)) {
@@ -185,11 +185,12 @@ $success = mysqli_real_connect(
     <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
 </section>
 <?php
-    echo $grpResult;
+    echo "<p class='debug' id='jsonObject'>".$grpResult."</p>";
 ?>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+<script src="js/serverfiller.js"></script>
 </body>
 </html>

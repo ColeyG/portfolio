@@ -1,5 +1,4 @@
 (function(){
-    console.log(document.getElementById('check').innerHTML);
     if(document.getElementById('check').innerHTML==="check"){
     var popdownButton=document.getElementById("popdown");
     function popup(){

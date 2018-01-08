@@ -11,6 +11,10 @@ Font-Size: 16px;
 /*
 Gorgeous Blue: #275fba;
 */
+.debug{
+  color:white;
+  display: none;
+}
 .hidden{
 	display:none;	
 }
