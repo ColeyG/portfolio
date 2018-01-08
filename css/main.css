@@ -412,3 +412,43 @@ a{
 #closeButton:hover{
   background-color:rgb(77, 146, 83);
 }
+input.input,textarea.input{
+  width:100%;
+  Font-Family: 'Source Sans Pro', Sans-Serif;
+  Font-Size: 16px;
+  border:1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  transition:.3s;
+}
+textarea.input{
+  resize:none;
+}
+textarea.input:focus{
+  box-shadow: 0px 10px 0px #275fba;
+}
+input.input:focus{
+  box-shadow: 0px 10px 0px #275fba;
+}
+#submitButton{
+  width:100%;
+  background-color: rgba(166,58,80,1);
+  cursor: pointer;
+  color:white;
+  padding:5px;
+  border:none;
+}
+#submitButton:hover{
+  background-color: rgb(212, 50, 83);
+}
+#submitButton:focus{
+  box-shadow: inset 0px 0px 5px black;
+}
+.blue{
+  box-shadow: 0px 5px 0px rgba(40,56,69,1);
+}
+.beige{
+  box-shadow: 0px 5px 0px rgba(242,212,146,1);
+}
+.red{
+  box-shadow: 0px 5px 0px rgba(166,58,80,1);
+}

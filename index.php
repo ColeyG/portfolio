@@ -133,15 +133,15 @@ $success = mysqli_real_connect(
         <div class="formWrapper">
         <form class="form" name="contact" method="post" action="index.php">
             <p class="italics">first name:</p>
-            <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
+            <input placeholder="John" class="input blue" type="text" name="first_name" maxlength="100" size="40">
             <p class="italics">last name:</p>
-            <input placeholder="Doe" class="input" type="text" name="last_name" maxlength="100" size="30">
+            <input placeholder="Doe" class="input beige" type="text" name="last_name" maxlength="100" size="40">
             <p class="italics">email:</p>
-            <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
+            <input placeholder="email123@gmail.com" class="input red" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
-            <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="What is your perogative?" class="input blue" type="message" name="message" maxlength="1500" cols="40" rows="8"></textarea>
             <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
-            <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
+            <input id="submitButton" class="input" id="submitButton" type="submit" value="Submit" name="submitBut">
         </form>
         </div>
     </div>
@@ -151,7 +151,7 @@ $success = mysqli_real_connect(
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.91</p>
+        <p>version 0.93</p>
     </div>
 </section>
 <section id="lightBox">
