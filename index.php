@@ -92,13 +92,16 @@ $success = mysqli_real_connect(
 </head>
 <body>
 <p id="check" class="hidden"><?php echo $check?></p>
+<h1 class="hidden">Canvas</h1>
 <canvas id="canvas"></canvas>
 <section id="onTop">
+    <h1 class="hidden">On Top of Canvas</h1>
     <header id="mainHeader">
         <div id="logo"><img src="images/logo.svg"></div>
     </header>
     <section id="container">
         <div id="typed">
+        <h1 class="hidden">Moving Text</h1>
             <span class="moving"></span>
         </div>
     </section>
@@ -127,7 +130,8 @@ $success = mysqli_real_connect(
     <div id="library">
         <h2 class="black">My Projects</h2>
         <section class="cardBanner">
-          </section>
+            <h1 class="hidden">Projects</h1>
+        </section>
     </div>
     <div id="resumeCon">
         <h2>Resum&#233</h2>
@@ -153,6 +157,7 @@ $success = mysqli_real_connect(
         </div>
     </div>
     <footer id="footer">
+        <h1 class="hidden">Footer</h1>
         <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png"></div></a>
         <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png"></div></a>
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
@@ -163,6 +168,7 @@ $success = mysqli_real_connect(
 </section>
 <section id="lightBox">
     <div id="popBody">
+        <h1 class="hidden">Popup area</h1>
         <p id="popTextHook">Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
