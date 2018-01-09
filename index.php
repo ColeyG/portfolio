@@ -64,7 +64,7 @@ $success = mysqli_real_connect(
 ?>
 
 <!doctype html>
-<html>
+<html  lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Cole Geerts&#39; Works</title>
@@ -88,27 +88,27 @@ $success = mysqli_real_connect(
 <meta name="theme-color" content="#ffffff">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i%7CSource+Sans+Pro" rel="stylesheet">
 </head>
 <body>
 <p id="check" class="hidden"><?php echo $check?></p>
-<h1 class="hidden">Canvas</h1>
+<h2 class="hidden">Canvas</h2>
 <canvas id="canvas"></canvas>
 <section id="onTop">
-    <h1 class="hidden">On Top of Canvas</h1>
+    <h2 class="hidden">On Top of Canvas</h2>
     <header id="mainHeader">
-        <div id="logo"><img src="images/logo.svg"></div>
+        <div id="logo"><img src="images/logo.svg" alt="Cole Geerts Logo"></div>
     </header>
     <section id="container">
         <div id="typed">
-        <h1 class="hidden">Moving Text</h1>
+        <h2 class="hidden">Moving Text</h2>
             <span class="moving"></span>
         </div>
     </section>
     <a id="downRockerButton">
         <div id="downRockerHold">
             <div id="downRocker">
-                <img src="images/rocker.png">
+                <img src="images/rocker.png" alt="down arrow">
             </div>
         </div>
     </a>
@@ -130,13 +130,13 @@ $success = mysqli_real_connect(
     <div id="library">
         <h2 class="black">My Projects</h2>
         <section class="cardBanner">
-            <h1 class="hidden">Projects</h1>
+            <h2 class="hidden">Projects</h2>
         </section>
     </div>
     <div id="resumeCon">
-        <h2>Resum&#233</h2>
+        <h2>Resum&#233;</h2>
         <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
-        <a href="resume.html"><p>See my full Resum&#233 here</p></a>
+        <a href="resume.html"><p>See my full Resum&#233; here</p></a>
     </div>
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
@@ -149,18 +149,18 @@ $success = mysqli_real_connect(
             <p class="italics">email:</p>
             <input placeholder="email123@gmail.com" class="input red" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
-            <textarea placeholder="What is your perogative?" class="input blue" type="message" name="message" maxlength="1500" cols="40" rows="8"></textarea>
-            <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
-            <input id="submitButton" class="input" id="submitButton" type="submit" value="Submit" name="submitBut">
+            <textarea placeholder="What is your perogative?" class="input blue" name="message" maxlength="1500" cols="40" rows="8"></textarea>
+            <textarea placeholder="Where is the css?" class="hidden" name="address" maxlength="1500" cols="30" rows="8"></textarea>
+            <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
         <p class="reminderText">all fields are required</p>
         </div>
     </div>
     <footer id="footer">
-        <h1 class="hidden">Footer</h1>
-        <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png"></div></a>
-        <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png"></div></a>
-        <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
+        <h2 class="hidden">Footer</h2>
+        <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png" alt="git logo"></div></a>
+        <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png" alt="codepen logo"></div></a>
+        <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
     <div id="versioning">
         <p>version 0.94 - Copyright &copy; 2018 Cole Geerts</p>
@@ -168,7 +168,7 @@ $success = mysqli_real_connect(
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <h1 class="hidden">Popup area</h1>
+        <h2 class="hidden">Popup area</h2>
         <p id="popTextHook">Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
