@@ -8,16 +8,18 @@
         $last = $_POST['last_name'];
         $message = $_POST['message'];
         $address = $_POST['address'];
+        $check="";
 
         $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
         if($address===""){
-            if(isset($_POST['first_name'])){
+            if($first==="" or $last==="" or $message==="" or $email===""){
+                $check="fail";
+            }else{
             mail($to,$subject,$body);
+            $check = "check";
             }
     }
-
-    $check = "check";
 }
     
 $user = 'root';
@@ -143,6 +145,7 @@ $success = mysqli_real_connect(
             <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" id="submitButton" type="submit" value="Submit" name="submitBut">
         </form>
+        <p class="reminderText">all fields are required</p>
         </div>
     </div>
     <footer id="footer">
@@ -151,14 +154,14 @@ $success = mysqli_real_connect(
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.93</p>
+        <p>version 0.94</p>
     </div>
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <p id="popTextHook">Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
-    <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
+    <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
 </section>
 <?php
     echo "<p class='debug' id='jsonObject'>".$grpResult."</p>";

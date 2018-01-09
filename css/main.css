@@ -452,3 +452,8 @@ input.input:focus{
 .red{
   box-shadow: 0px 5px 0px rgba(166,58,80,1);
 }
+.reminderText{
+  font-style: italic;
+  color:rgba(0,0,0,.5);
+  font-size:.9rem;
+}
