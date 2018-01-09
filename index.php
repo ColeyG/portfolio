@@ -163,7 +163,7 @@ $success = mysqli_real_connect(
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.95 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 0.95.1 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">

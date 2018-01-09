@@ -455,3 +455,8 @@ input.input:focus{
   color:rgba(0,0,0,.5);
   font-size:.9rem;
 }
+#htmlResume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
