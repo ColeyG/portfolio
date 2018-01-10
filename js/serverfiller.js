@@ -10,7 +10,7 @@
         }
 
         httpRequest.onreadystatechange = processRequest;
-        httpRequest.open("GET",'includes/get.php',true);
+        httpRequest.open("GET",'includes/getProjects.php',true);
         httpRequest.send();
     }
 
