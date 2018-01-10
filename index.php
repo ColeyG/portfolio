@@ -75,6 +75,9 @@ $check="";
     </a>
 </section>
 <section id="underneath">
+    <section id="galleryBack">
+        <img alt="gallery image large" src="images/gallery/1.jpg" id="popupImg">
+    </section>
     <div id="switcher">
         <div id="currentCanvas"></div>
         <div id="currentTitle">Bubble Background</div>
@@ -117,6 +120,16 @@ $check="";
         <p class="reminderText">all fields are required</p>
         </div>
     </div>
+    <div id="galleryCon">
+        <h2 id="galleryTitle" class="black">Gallery</h2>
+        <div id="galleryConImages">
+            <img src="images/gallery/1.jpg" alt="gallery image" id="1.jpg" class="galleryImage">
+            <img src="images/gallery/2.png" alt="gallery image" id="2.png" class="galleryImage">
+            <img src="images/gallery/3.png" alt="gallery image" id="3.png" class="galleryImage">
+            <img src="images/gallery/4.jpg" alt="gallery image" id="4.jpg" class="galleryImage">
+            <img src="images/gallery/5.png" alt="gallery image" id="5.png" class="galleryImage">
+        </div>
+    </div>
     <footer id="footer">
         <h2 class="hidden">Footer</h2>
         <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png" alt="git logo"></div></a>
@@ -134,12 +147,10 @@ $check="";
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
 </section>
-<?php
-    echo "<p class='debug' id='jsonObject'>".$grpResult."</p>";
-?>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
+<script src="js/galleryLightbox.js"></script>
 <script src="js/main.js"></script>
 <script src="js/serverfiller.js"></script>
 </body>
