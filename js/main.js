@@ -3,14 +3,16 @@
     var scroll=window.innerHeight;
     var options = {
         strings: [
-        "I am a <span class='typeChange'>writer,</span>^1000",
         "I am a <span class='typeChange'>designer,</span>^1000",
         "I am a <span class='typeChange'>developer,</span>^1000",
+        "I am a <span class='typeChange'>creator,</span>^1000",
         "I work with <span class='typeChange'>js,</span>^1000",
         "I work with <span class='typeChange'>php,</span>^1000",
         "I work with <span class='typeChange'>sass,</span>^1000",
         "I work with <span class='typeChange'>css,</span>^1000",
-        "I work with <span class='typeChange'>html,</span>^1000"
+        "I work with <span class='typeChange'>html,</span>^1000",
+        "I like to <span class='typeChange'>tinker,</span>^1000",     
+        "I like to <span class='typeChange'>make things.</span>^1000"
         ],
         startDelay: 2000,
         typeSpeed: 40,

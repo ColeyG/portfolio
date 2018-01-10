@@ -1,4 +1,5 @@
 <?php
+$check="";
     if(isset($_POST['submitBut'])){
     
         $to = "cole@colegeerts.com";
@@ -8,19 +9,23 @@
         $last = $_POST['last_name'];
         $message = $_POST['message'];
         $address = $_POST['address'];
+        $check="";
 
         $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
         if($address===""){
-        mail($to,$subject,$body);
-        }
-
-        $check = "check";
+            if($first==="" or $last==="" or $message==="" or $email===""){
+                $check="fail";
+            }else{
+            mail($to,$subject,$body);
+            $check = "check";
+            }
     }
+}
 ?>
 
 <!doctype html>
-<html>
+<html  lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Cole Geerts&#39; Works</title>
@@ -44,37 +49,36 @@
 <meta name="theme-color" content="#ffffff">
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i%7CSource+Sans+Pro" rel="stylesheet">
 </head>
 <body>
 <p id="check" class="hidden"><?php echo $check?></p>
+<h2 class="hidden">Canvas</h2>
 <canvas id="canvas"></canvas>
 <section id="onTop">
+    <h2 class="hidden">On Top of Canvas</h2>
     <header id="mainHeader">
-        <div id="logo"><img src="images/logo.svg"></div>
-        <nav id="mainNav">
-            <a class="mainNavButton" href="#">Home</a>
-            <a class="mainNavButton" href="#">About</a>
-            <a class="mainNavButton" href="#">Library</a>
-            <a class="mainNavButton" href="#">Resume</a>
-            <a class="mainNavButton" href="#">Contact</a>
-        </nav>
-        <a class="mainNavButton" id="stickyTop" href="#">^Top^</a>
+        <div id="logo"><img src="images/logo.svg" alt="Cole Geerts Logo"></div>
     </header>
     <section id="container">
         <div id="typed">
+        <h2 class="hidden">Moving Text</h2>
             <span class="moving"></span>
         </div>
     </section>
     <a id="downRockerButton">
         <div id="downRockerHold">
             <div id="downRocker">
-                <img src="images/rocker.png">
+                <img src="images/rocker.png" alt="down arrow">
             </div>
         </div>
     </a>
 </section>
 <section id="underneath">
+    <section id="galleryBack">
+        <h2 class="hidden">Gallery Backer</h2>
+        <img alt="gallery image large" src="images/gallery/1.png" id="popupImg">
+    </section>
     <div id="switcher">
         <div id="currentCanvas"></div>
         <div id="currentTitle">Bubble Background</div>
@@ -91,74 +95,60 @@
     <div id="library">
         <h2 class="black">My Projects</h2>
         <section class="cardBanner">
-            <!--Start of the card-->
-            <a href="https://github.com/ColeyG/planets">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/planets.png"></div>
-                <h2 class="cardTitle">planets</h2>
-                <h2 class="cardSubTitle">This experiment is meant to play with game inputs in an HTML 5 canvas elements. It registers keypresses and handles inputs.</h2>
-                <h2 class="cardDate">since october, 2017</h2>
-              </div>  
-            </a>
-            <a href="https://github.com/ColeyG/photoPortfolio">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/bbstudios.png"></div>
-                <h2 class="cardTitle">gallery</h2>
-                <h2 class="cardSubTitle">This project is to be a site that one could populate with a gallery. As this progresses it will include cms features.</h2>
-                <h2 class="cardDate">since november, 2017</h2>
-              </div>  
-            </a>
-            <a href="https://github.com/ColeyG/fullCanvasSplash">
-              <div class="card">
-                <div class="cardImg"><img src="images/projectHeaders/cgeerts.png"></div>
-                <h2 class="cardTitle">my site</h2>
-                <h2 class="cardSubTitle">A link to the repository for this site. My favorite work in progress.</h2>
-                <h2 class="cardDate">since july, 2017</h2>
-              </div>  
-            </a>
-            <!--End of the card-->
-          </section>
+            <h2 class="hidden">Projects</h2>
+        </section>
     </div>
     <div id="resumeCon">
-        <h2>Resum&#233</h2>
+        <h2>Resum&#233;</h2>
         <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
-        <a href="resume.html"><p>See my full Resum&#233 here</p></a>
+        <a href="resume.html"><p>See my full Resum&#233; here</p></a>
     </div>
     <div id="contactCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
         <form class="form" name="contact" method="post" action="index.php">
             <p class="italics">first name:</p>
-            <input placeholder="John" class="input" type="text" name="first_name" maxlength="100" size="30">
+            <input placeholder="John" class="input blue" type="text" name="first_name" maxlength="100" size="40">
             <p class="italics">last name:</p>
-            <input placeholder="Doe" class="input" type="text" name="last_name" maxlength="100" size="30">
+            <input placeholder="Doe" class="input beige" type="text" name="last_name" maxlength="100" size="40">
             <p class="italics">email:</p>
-            <input placeholder="email123@gmail.com" class="input" type="text" name="email" maxlength="150" size="40">
+            <input placeholder="email123@gmail.com" class="input red" type="text" name="email" maxlength="150" size="40">
             <p class="italics">message:</p>
-            <textarea placeholder="What is your perogative?" class="input" type="message" name="message" maxlength="1500" cols="30" rows="8"></textarea>
-            <textarea placeholder="Where is the css?" class="hidden" type="message" name="address" maxlength="1500" cols="30" rows="8"></textarea>
+            <textarea placeholder="What is your perogative?" class="input blue" name="message" maxlength="1500" cols="40" rows="8"></textarea>
+            <textarea placeholder="Where is the css?" class="hidden" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>
+        <p class="reminderText">all fields are required</p>
+        </div>
+    </div>
+    <div id="galleryCon">
+        <h2 id="galleryTitle" class="black">Gallery</h2>
+        <div id="galleryConImages">
+            
         </div>
     </div>
     <footer id="footer">
-        <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png"></div></a>
-        <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png"></div></a>
-        <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg"></div></a>
+        <h2 class="hidden">Footer</h2>
+        <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png" alt="git logo"></div></a>
+        <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png" alt="codepen logo"></div></a>
+        <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.87</p>
+        <p>version 1.0 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
     <div id="popBody">
-        <p>Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
+        <h2 class="hidden">Popup area</h2>
+        <p id="popTextHook">Thanks for reaching out <?php echo $first?>. I am sure you will be hearing from me shortly. In the mean time, please take a look at my other projects and visit my pages around the web.</p>
     </div>
-    <a href="#" id="popdown"><div id="closeButton"><p>Close</p></div></a>
+    <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
 </section>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+<script src="js/imagefiller.js"></script>
+<script src="js/serverfiller.js"></script>
 </body>
 </html>
