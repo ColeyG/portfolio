@@ -134,7 +134,7 @@ $check="";
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 0.96 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 1.0 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
