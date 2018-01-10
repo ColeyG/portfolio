@@ -76,7 +76,8 @@ $check="";
 </section>
 <section id="underneath">
     <section id="galleryBack">
-        <img alt="gallery image large" src="" id="popupImg">
+        <h2 class="hidden">Gallery Backer</h2>
+        <img alt="gallery image large" src="images/gallery/1.png" id="popupImg">
     </section>
     <div id="switcher">
         <div id="currentCanvas"></div>
