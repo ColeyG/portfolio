@@ -19,7 +19,6 @@
             if(httpRequest.status === 200){
                 //console.log(httpRequest.responseText);
                 let data = JSON.parse(httpRequest.responseText);
-                console.log(data);
                 processResult(data);
             }else{
                 console.log('fail');

@@ -76,7 +76,7 @@ $check="";
 </section>
 <section id="underneath">
     <section id="galleryBack">
-        <img alt="gallery image large" src="images/gallery/1.jpg" id="popupImg">
+        <img alt="gallery image large" src="" id="popupImg">
     </section>
     <div id="switcher">
         <div id="currentCanvas"></div>
@@ -123,11 +123,7 @@ $check="";
     <div id="galleryCon">
         <h2 id="galleryTitle" class="black">Gallery</h2>
         <div id="galleryConImages">
-            <img src="images/gallery/1.png" alt="gallery image" id="1.png" class="galleryImage">
-            <img src="images/gallery/2.png" alt="gallery image" id="2.png" class="galleryImage">
-            <img src="images/gallery/3.png" alt="gallery image" id="3.png" class="galleryImage">
-            <img src="images/gallery/4.png" alt="gallery image" id="4.png" class="galleryImage">
-            <img src="images/gallery/5.png" alt="gallery image" id="5.png" class="galleryImage">
+            
         </div>
     </div>
     <footer id="footer">
@@ -150,8 +146,8 @@ $check="";
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
-<script src="js/galleryLightbox.js"></script>
 <script src="js/main.js"></script>
+<script src="js/imagefiller.js"></script>
 <script src="js/serverfiller.js"></script>
 </body>
 </html>
