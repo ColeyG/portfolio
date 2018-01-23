@@ -75,10 +75,6 @@ $check="";
     </a>
 </section>
 <section id="underneath">
-    <section id="galleryBack">
-        <h2 class="hidden">Gallery Backer</h2>
-        <img alt="gallery image large" src="images/gallery/1.png" id="popupImg">
-    </section>
     <div id="switcher">
         <div id="currentCanvas"></div>
         <div id="currentTitle">Bubble Background</div>
@@ -121,12 +117,6 @@ $check="";
         <p class="reminderText">all fields are required</p>
         </div>
     </div>
-    <div id="galleryCon">
-        <h2 id="galleryTitle" class="black">Gallery</h2>
-        <div id="galleryConImages">
-            
-        </div>
-    </div>
     <footer id="footer">
         <h2 class="hidden">Footer</h2>
         <a href="https://github.com/ColeyG"><div class="social"><img src="images/git.png" alt="git logo"></div></a>
@@ -134,7 +124,7 @@ $check="";
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
     <div id="versioning">
-        <p>version 1.0 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 1.1 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
@@ -148,7 +138,6 @@ $check="";
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
-<script src="js/imagefiller.js"></script>
 <script src="js/serverfiller.js"></script>
 </body>
 </html>
