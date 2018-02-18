@@ -510,4 +510,6 @@ input.input:focus{
   background-color: white;
   margin:20px;
   box-shadow: 3px 5px 15px #070707;
+  max-height: 100vh;
+  max-width:100%;
 }
