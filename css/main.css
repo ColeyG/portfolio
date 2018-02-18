@@ -39,6 +39,11 @@ a{
   color:white;
   text-decoration-color: white;
 }
+.flexIn{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
 .italics{font-style: italic;}
 .white{color:white;line-height:35px;}
 .black{color:black;}
@@ -500,4 +505,9 @@ input.input:focus{
   margin:20px;
   max-width:90%;
   max-height:90%;
+}
+#resumeActual{
+  background-color: white;
+  margin:20px;
+  box-shadow: 3px 5px 15px #070707;
 }
