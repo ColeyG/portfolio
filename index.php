@@ -96,7 +96,7 @@ $check="";
     </div>
     <div id="resumeCon">
         <h2>Resum&#233;</h2>
-        <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
+        <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, SQL, Node.js and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These pieces of tech used in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
         <a href="resume.html"><p>See my full Resum&#233; here</p></a>
     </div>
     <div id="contactCon">
