@@ -9,6 +9,8 @@
         "I work with <span class='typeChange'>js,</span>^1000",
         "I work with <span class='typeChange'>php,</span>^1000",
         "I work with <span class='typeChange'>sass,</span>^1000",
+        "I work with <span class='typeChange'>sql,</span>^1000",
+        "I work with <span class='typeChange'>node.js,</span>^1000",
         "I work with <span class='typeChange'>css,</span>^1000",
         "I work with <span class='typeChange'>html,</span>^1000",
         "I like to <span class='typeChange'>tinker,</span>^1000",     
