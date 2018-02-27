@@ -17,7 +17,7 @@
         var rad = deg * Math.PI / 180;
         c.translate(x + width / 2, y + height / 2);
         c.rotate(rad);   
-        c.fillStyle="rgba(255,255,255,.5)";
+        c.fillStyle="rgba(255,255,255,.3)";
         c.fillRect(width / 2 * (-1),height / 2 * (-1),width,height);
         c.rotate(rad * ( -1 ) );
         c.translate((x + width / 2) * (-1), (y + height / 2) * (-1));
