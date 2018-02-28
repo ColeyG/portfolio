@@ -1,7 +1,14 @@
 @charset "utf-8";
 
+
+p{
+    margin:0px;
+}
 body{
     margin:0px;
+    overflow: hidden;
+    background: linear-gradient(170deg, #304352, #162851);
+    height: 100vh;
 }
 #canvas{
     /* background: linear-gradient(#fca5f1, #b5ffff); */
@@ -13,4 +20,11 @@ body{
     width:100%;
     height:90vh;
     transition:.2s;
+}
+#ontop{
+    width:100%;
+    height:90vh;
+    margin-top:-90vh;
+    position: relative;
+    z-index: 3;
 }

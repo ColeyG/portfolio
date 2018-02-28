@@ -1,57 +1,63 @@
 (function(){
-
-  var canvas = document.getElementById('canvas');
+  canvas=document.getElementById('canvas');
   canvas.width=window.innerWidth;
-  canvas.height=window.innerHeight;
+  canvas.height=window.innerHeight*.9;
+  canWidth=window.innerwidth;
+  canHeight=window.innerHeight;
   var c = canvas.getContext('2d');
-  
-  function Circle(x,y,dx,dy,radius,color){
-    this.x=x;
-    this.y=y;
-    this.dx=dx;
-    this.dy=dy;
-    this.radius=radius;
-    this.color=color;
-    this.draw=function(){
-      c.beginPath();
-      c.arc(this.x,this.y,this.radius,0,Math.PI*2,false);
-      c.fillStyle=this.color;
-      c.stroke();
-      c.fill();
-    }
-    this.update=function(){
-      if(this.x+this.radius>innerWidth){this.dx=-this.dx}
-      if(this.y+this.radius>innerHeight){this.dy=-this.dy}
-      if(this.x-this.radius<0){this.dx=-this.dx}
-      if(this.y-this.radius<0){this.dy=-this.dy}
-      this.x+=this.dx;
-      this.y+=this.dy;
-      this.draw();
-    }
+
+  var drops=[];
+  var gravity=.1;
+  var dropletAmount=1000;
+  var gravDir=90;
+  var dropWidth=1;
+  var dropHeight=20;
+
+  function dropletRotation(x,y,height,width,deg){
+      var rad = deg * Math.PI / 180;
+      c.translate(x + width / 2, y + height / 2);
+      c.rotate(rad);   
+      c.fillStyle="rgba(255,255,255,.3)";
+      c.fillRect(width / 2 * (-1),height / 2 * (-1),width,height);
+      c.rotate(rad * ( -1 ) );
+      c.translate((x + width / 2) * (-1), (y + height / 2) * (-1));
   }
-  
-  var circleArray=[];
-    var n=0;
-  for (var i=0;i<200;i++){
-    var colorArray=["rgba(40,56,69,.5)","rgba(242,212,146,.5)","rgba(166,58,80,.5)"];
-    var radius = Math.random()*30+15;
-    var x = Math.random()*(innerWidth-radius*2)+radius;
-    var y = Math.random()*(innerHeight-radius*2)+radius;
-    var dx = Math.random()*4-2;
-    var dy = Math.random()*4-2;
-    var color = colorArray[n];
-    n++;
-    if (n>2){n=0};
-    circleArray.push(new Circle(x,y,dx,dy,radius,color));
+
+  function Droplet(x,y,speed,initialSpeed){
+      this.x=x;
+      this.y=y;
+      this.speed=initialSpeed;
+      this.initialSpeed=initialSpeed;
+      this.draw=function(){
+          dropletRotation(this.x,this.y,dropWidth,dropHeight,gravDir);
+      }
+      this.update=function(){
+          this.y=this.y+this.speed;
+          this.speed=this.speed+gravity;
+          if(this.y>canvas.height){
+              this.y=-20
+              this.speed=this.initialSpeed;
+              this.x=Math.random()*canvas.width;
+          }
+          this.draw();
+      }
   }
+
+  for(var i=0; i<dropletAmount; i++){
+      drops.push(new Droplet(Math.random()*canvas.width,Math.random()*canvas.height,10,Math.random()*10));
+  }
+
   function animate(){
-    requestAnimationFrame(animate);
-    canvas.width=window.innerWidth;
-    canvas.height=window.innerHeight;
-    c.clearRect(0,0,innerWidth,innerHeight);
-    for(var i=0;i<circleArray.length;i++){
-      circleArray[i].update();
-    }
+      requestAnimationFrame(animate);
+      canvas.width=window.innerWidth;
+      canvas.height=window.innerHeight*.9;
+      canWidth=window.innerwidth;
+      canHeight=window.innerHeight;
+      for(var i=0;i<drops.length;i++){
+          drops[i].update();
+      }
   }
+
   animate();
-  })();
+
+})();
