@@ -42,6 +42,7 @@ a{
 .italics{font-style: italic;}
 .white{color:white;line-height:35px;}
 .black{color:black;}
+.blackBG{background-color: #070707}
 .flexIn{
   display: flex;
   justify-content: center;
@@ -518,4 +519,8 @@ input.input:focus{
   box-shadow: 3px 5px 15px #070707;
   max-height: 100vh;
   max-width:100%;
+}
+.insignia{
+  width:80px;
+  margin-bottom:10px;
 }

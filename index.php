@@ -123,8 +123,11 @@ $check="";
         <a href="https://codepen.io/ColeyG/"><div class="social"><img src="images/codepen.png" alt="codepen logo"></div></a>
         <a href="https://twitter.com/ColeyGeerts"><div class="social"><img src="images/twitter.svg" alt="twitter logo"></div></a>
     </footer>
+    <div class="flexIn blackBG">
+        <img src="images/insignia.svg" class="insignia" alt="Insignia">
+    </div>
     <div id="versioning">
-        <p>version 1.1 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 2.1 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
