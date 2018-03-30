@@ -42,6 +42,11 @@ a{
 .italics{font-style: italic;}
 .white{color:white;line-height:35px;}
 .black{color:black;}
+.flexIn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #canvas{
   background-color:#191919;
   position:absolute;
@@ -506,4 +511,11 @@ input.input:focus{
   margin:20px;
   max-width:90%;
   max-height:90%;
+}
+#resumeActual{
+  background-color: white;
+  margin:20px;
+  box-shadow: 3px 5px 15px #070707;
+  max-height: 100vh;
+  max-width:100%;
 }
