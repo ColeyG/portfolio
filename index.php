@@ -127,7 +127,7 @@ $check="";
         <img src="images/insignia.svg" class="insignia" alt="Insignia">
     </div>
     <div id="versioning">
-        <p>version 2.1 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 2.2 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
