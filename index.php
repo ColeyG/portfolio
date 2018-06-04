@@ -87,7 +87,11 @@ $check="";
     <div id="about">
         <h2>What I Do</h2>
         <div class="pinstripe"></div>
-        <p class="white">I&#39;m Cole Geerts and I am a Web Developer out of London Ontario. I've been learning and refining my skills for a little over a year now and have a lot of active projects that I am interested in. Below are my project quick-link cards that thread off to different parts of the internet that I am involved in. I primarily write small projects on my <a href="https://codepen.io/ColeyG/">codepen</a> and <a href="https://github.com/ColeyG">github</a> accounts respectively but you'll see my main muses below. On top of that you'll see some of my work I&#39;ve collaborated on. Please take a look and do get in touch! Keep in mind I <span class="italics">am</span> accepting clients and <span class="italics">will</span> work on your projects so do not hesitate to talk about your ideas.</p>
+        <p class="white">I&#39;m Cole Geerts and I am a Web Developer out of London Ontario. 
+        I've been learning and refining my skills for a little over a year now and have a lot of active projects 
+        that I am interested in. Below are my project quick-link cards that thread off to different parts of the internet 
+        that I am involved in. I primarily write small projects on my <a href="https://github.com/ColeyG">github</a> account but you'll see my main muses below. 
+        On top of that you'll see some of the work I&#39;ve collaborated on. Please take a look and do get in touch! Keep in mind I <span class="italics">am</span> accepting clients and <span class="italics">will</span> work on your projects so do not hesitate to talk about your ideas.</p>
         <div class="pinstripe"></div>
     </div>
     <div id="library">
@@ -99,7 +103,14 @@ $check="";
     <div id="resumeCon">
         <h2>Resum&#233;</h2>
         <div class="pinstripe"></div>
-        <p class="white">My work and study comprises of all things vaguely &#39;full stack&#39; as I have a wide reach of knowledge from CSS/SASS, JS, PHP, and beyond. While most of my work focuses on the entire development process I like to work with javascript and its plethora of libraries and frameworks like node.js. On top of that I also like to stay frequent with the CSS spec studying CSS-flexbox and CSS-grid on my own time. These prices of tech in conjunction ensure that I am able to assemble great pieces of web tech alone or in a group. Take a full look down below.</p>
+        <p class="white">
+            My work and study comprises of all things vaguely &#39;full stack&#39; as I 
+            have a wide reach of knowledge from CSS/SASS, JS, PHP, node.js, vue, and beyond. 
+            While most of my work focuses on the entire development process I like to work with javascript and php
+            and a plethora of relevant libraries and frameworks. On top of that I also like to stay frequent,
+            I am constantly studying and keeping myself up-to-date with personal projects. 
+            These pieces of tech when used in conjunction ensure that I am able to assemble great pieces of web tech alone
+            or in a group. Take a full look down below.</p>
         <div class="pinstripe"></div>
         <a href="resume.html"><p>See my full Resum&#233; here</p></a>
     </div>
@@ -131,7 +142,7 @@ $check="";
         <img src="images/insignia.svg" class="insignia" alt="Insignia">
     </div>
     <div id="versioning">
-        <p>version 2.2 - Copyright &copy; 2018 Cole Geerts</p>
+        <p>version 2.3 - Copyright &copy; 2018 Cole Geerts</p>
     </div>
 </section>
 <section id="lightBox">
