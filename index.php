@@ -98,10 +98,10 @@ $check="";
     </div>
     <div id="library">
         <div class="sectionCon">
-        <h2 class="black">My Projects</h2>
-        <section class="cardBanner">
-            <h2 class="hidden">Projects</h2>
-        </section>
+            <h2 class="black">My Projects</h2>
+            <section class="cardBanner">
+                <h2 class="hidden">Projects</h2>
+            </section>
         </div>    
     </div>
     <div id="resumeCon" class='iDoAndResume'>
@@ -120,6 +120,7 @@ $check="";
         </div>
     </div>
     <div id="contactCon">
+        <div class="sectionCon">
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
         <form class="form" name="contact" method="post" action="index.php">
@@ -136,6 +137,8 @@ $check="";
         </form>
         <p class="reminderText">all fields are required</p>
         </div>
+        </div>
+        
     </div>
     <footer id="footer">
         <h2 class="hidden">Footer</h2>

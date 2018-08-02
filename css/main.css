@@ -213,6 +213,7 @@ a{
 .sectionCon{
   max-width:1140px;
   margin:0 auto;
+  padding:3rem;
 }
 #about{
   min-height:150px;
@@ -321,7 +322,6 @@ a{
   height:100px;
   width:100%;
   background-color:#070707;
-  margin-top:15px;
   display:flex;
   justify-content: center;
   align-items: center;
