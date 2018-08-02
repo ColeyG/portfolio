@@ -123,13 +123,13 @@ $check="";
         <h2 id="letsTalk" class="black">Let&#39;s talk:</h2>
         <div class="formWrapper">
         <form class="form" name="contact" method="post" action="index.php">
-            <p class="italics">first name:</p>
+            <p class="italics formLabel">first name:</p>
             <input placeholder="John" class="input blue" type="text" name="first_name" maxlength="100" size="40">
-            <p class="italics">last name:</p>
+            <p class="italics formLabel">last name:</p>
             <input placeholder="Doe" class="input beige" type="text" name="last_name" maxlength="100" size="40">
-            <p class="italics">email:</p>
+            <p class="italics formLabel">email:</p>
             <input placeholder="email123@gmail.com" class="input red" type="text" name="email" maxlength="150" size="40">
-            <p class="italics">message:</p>
+            <p class="italics formLabel">message:</p>
             <textarea placeholder="What is your perogative?" class="input blue" name="message" maxlength="1500" cols="40" rows="8"></textarea>
             <textarea placeholder="Where is the css?" class="hidden" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
