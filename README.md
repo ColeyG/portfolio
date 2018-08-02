@@ -1,2 +1,2 @@
-﻿# fullCanvasSplash
-fullCanvasSplash is an attempt at making a small site with a focus point of canvas design elements at any size. This project when paired with any library of works could make for a nice portfolio or a place to play around with interesting 2d/3d web spec. The design is intended to be spartan and focuses on the animation work written in js.
+﻿# Portfolio
+Welcome to my portfolio repo! This has spent a long time in the works, so it may have some legacy code or buried spaghetti if you will. Here is a link to the live version: http://colegeerts.com/
