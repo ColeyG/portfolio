@@ -19,7 +19,7 @@ Gorgeous Blue: #275fba;
 	display:none;	
 }
 body{
-  background-color:#191919;
+  background-color:#16161d;
 }
 h2{
   Font-Family: 'Playfair Display', Serif;
@@ -43,14 +43,14 @@ a{
 .italics{font-style: italic;}
 .white{color:white;line-height:35px;}
 .black{color:#16161d;}
-.blackBG{background-color: #16161d}
+.blackBG{background-color: #070707}
 .flexIn{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #canvas{
-  background-color:#16161d;
+  background-color:#191919;
   position:absolute;
   z-index:-1;
   max-width: 100%;
@@ -168,7 +168,7 @@ a{
   position:absolute;
   margin-top: 94vh;
   width:100%;
-  background-color:#191919;
+  background-color:#16161d;
 }
 #switcher{
   height:150px;
@@ -217,7 +217,7 @@ a{
 #about{
   min-height:150px;
   width:100%-10px;
-  background-color:#070707;
+  background-color:#16161d;
   margin-top:15px;
 }
 #library{
@@ -293,7 +293,7 @@ a{
 #resumeCon{
   min-height:150px;
   width:100%-10px;
-  background-color:#070707;
+  background-color:#16161d;
   margin-top:15px;
 }
 #contactCon{
