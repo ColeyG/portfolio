@@ -23,17 +23,18 @@ body{
 }
 h2{
   Font-Family: 'Playfair Display', Serif;
-  Font-Size: 36px;
-  margin:10px;
+  Font-Size: 3rem;
+  margin-bottom:1rem;
   color:white;
   font-style: italic;
 }
 p{
   Font-Family: 'Source Sans Pro', Sans-Serif;
-  Font-Size: 2em;
+  Font-Size: 1.3em;
   margin:15px;
   text-indent:20px;
   padding-bottom:5px;
+  line-height:1.6;
 }
 a{
   color:white;
@@ -41,7 +42,7 @@ a{
 }
 .italics{font-style: italic;}
 .white{color:white;line-height:35px;}
-.black{color:black;}
+.black{color:#16161d;}
 .blackBG{background-color: #070707}
 .flexIn{
   display: flex;
@@ -206,8 +207,14 @@ a{
 #canvas1{background-size:cover;background-image: url('../images/canvas.png');}
 #canvas2{background-size:cover;background-image: url('../images/canvas.png');}
 #canvas3{background-size:cover;background-image: url('../images/canvas.png');}
+.iDoAndResume{
+  padding:3rem;
+}
+.sectionCon{
+  max-width:1140px;
+  margin:0 auto;
+}
 #about{
-  padding:10px;
   min-height:150px;
   width:100%-10px;
   background-color:#070707;
@@ -284,7 +291,6 @@ a{
   font-size:15pt;
 }
 #resumeCon{
-  padding:10px;
   min-height:150px;
   width:100%-10px;
   background-color:#070707;
