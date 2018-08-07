@@ -544,3 +544,59 @@ input.input:focus{
   margin-bottom:0rem;
   text-indent: 0px;
 }
+/* newcards */
+.cardColdLink{
+  text-decoration:none;
+}
+.cardCold{
+  text-decoration:none;
+  width:300px;
+  margin:10px;
+  z-index:10;
+  height:200px;
+  background-color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background-image:url('https://images.pexels.com/photos/91228/pexels-photo-91228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size:cover;
+  border-radius:3px;
+/*   filter:grayscale(50%); */
+  transform:rotate3d(0, 0, 0, 15deg);
+  box-shadow:0px 5px 10px rgba(0,0,0,.5);
+  transition:.2s;
+  opacity:.9;
+  overflow:hidden;
+}
+.cardColdTitle{
+  font-family:'Open Sans',sans-serif;
+  font-size:2rem;
+  color:white;
+  text-shadow:0px 0px 1px rgba(0,0,0,.9);
+  border-bottom:2px solid rgba(255,255,255,.75);
+  margin-bottom:5px;
+  margin-top:5px;
+}
+.cardColdSlug{
+  font-family:'Open Sans',sans-serif;
+  font-size:1rem;
+  color:white;
+  text-shadow:0px 0px 1px rgba(0,0,0,1);
+  padding-left:10px;
+  padding-right:10px;
+  text-align:center;
+}
+.cardCold:hover{
+  z-index:11;
+  transform: scale(1.1);
+  filter:grayscale(0%);
+  opacity:1;
+/*   transform:rotate3d(1, 0, 0, 360deg); */
+}
+.cardCold:active,.cardCold:focus{
+  z-index:11;
+  transform: scale(0.9);
+  filter:grayscale(0%);
+  opacity:1;
+}

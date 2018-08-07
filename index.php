@@ -101,6 +101,26 @@ $check="";
             <h2 class="black">My Projects</h2>
             <section class="cardBanner">
                 <h2 class="hidden">Projects</h2>
+                <!--Proj area-->
+                <a href='#' class='cardColdLink'>
+                    <div class="cardCold">
+                    <h2 class='cardColdTitle'>title</h2>
+                    <p class='cardColdSlug'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <a href='#' class='cardColdLink'>
+                    <div class="cardCold">
+                    <h2 class='cardColdTitle'>title</h2>
+                    <p class='cardColdSlug'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <a href='#' class='cardColdLink'>
+                    <div class="cardCold">
+                    <h2 class='cardColdTitle'>title</h2>
+                    <p class='cardColdSlug'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </a>
+                <!--Proj area end-->
             </section>
         </div>    
     </div>
