@@ -1,25 +1,25 @@
 <?php
-$check="";
-    if(isset($_POST['submitBut'])){
+
+if(isset($_POST['submitBut'])){
     
-        $to = "cole@colegeerts.com";
-        $email = $_POST['email'];
-        $subject = $email ." - Message from your DotCom.";
-        $first = $_POST['first_name'];
-        $last = $_POST['last_name'];
-        $message = $_POST['message'];
-        $address = $_POST['address'];
-        $check="";
+    $to = "cole@colegeerts.com";
+    $email = $_POST['email'];
+    $subject = $email ." - Message from your DotCom.";
+    $first = $_POST['first_name'];
+    $last = $_POST['last_name'];
+    $message = $_POST['message'];
+    $address = $_POST['address'];
+    $check="";
 
-        $body = $first . " " . $last . " at " . $email . " says: " . $message;
+    $body = $first . " " . $last . " at " . $email . " says: " . $message;
 
-        if($address===""){
-            if($first==="" or $last==="" or $message==="" or $email===""){
-                $check="fail";
-            }else{
-            mail($to,$subject,$body);
-            $check = "check";
-            }
+    if($address===""){
+        if($first==="" or $last==="" or $message==="" or $email===""){
+            $check="fail";
+        }else{
+        mail($to,$subject,$body);
+        $check = "check";
+        }
     }
 }
 ?>
@@ -180,10 +180,10 @@ $check="";
     </div>
     <a href="#" id="popdown"><div id="closeButton"><p id="popCloseHook">Close</p></div></a>
 </section>
+<script src='js/coldAjax.js'></script>
 <script src="js/popup.js"></script>
 <script src="js/canvasCircle.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
-<script src="js/serverfiller.js"></script>
 </body>
 </html>

@@ -559,14 +559,13 @@ input.input:focus{
   justify-content:center;
   align-items:center;
   flex-direction:column;
-  background-image:url('https://images.pexels.com/photos/91228/pexels-photo-91228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size:cover;
   border-radius:3px;
 /*   filter:grayscale(50%); */
   transform:rotate3d(0, 0, 0, 15deg);
   box-shadow:0px 5px 10px rgba(0,0,0,.5);
   transition:.2s;
-  opacity:.9;
+  opacity:0;
   overflow:hidden;
 }
 .cardColdTitle{
@@ -574,7 +573,8 @@ input.input:focus{
   font-size:2rem;
   color:white;
   text-shadow:0px 0px 1px rgba(0,0,0,.9);
-  border-bottom:2px solid rgba(255,255,255,.75);
+  /* border-bottom:2px solid rgba(255,255,255,.75); */
+  padding:3px;
   margin-bottom:5px;
   margin-top:5px;
 }

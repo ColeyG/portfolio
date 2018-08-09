@@ -32,4 +32,29 @@
     }
 
     rocker.addEventListener('click',down,false);
+
+    function fillProj(data){
+        let respD=JSON.parse(data);
+        let cards='';
+        for(i=0;i<respD.entries;i++){
+            let card="<a href="+respD[i].link+" class='cardColdLink'>";
+            card+="<div class='cardCold' id=card_"+[i]+"><h2 class='cardColdTitle'>"+respD[i].title+"</h2>";
+            card+="<p class='cardColdSlug'>"+respD[i].slug+"</p></div></a>";
+
+            cards+=card;
+            //console.log(card);
+        }
+        let cardBanner=document.querySelector('.cardBanner');
+        cardBanner.innerHTML=cards;
+        for(i=0;i<respD.entries;i++){
+            let bgCard=document.querySelector('#card_'+[i]);
+            bgCard.style.backgroundImage="url("+respD[i].image+")";
+        }
+        let cardsElement=document.querySelectorAll('.cardCold');
+        cardsElement.forEach(element => {
+            element.style.opacity='0.9';
+        });
+    }
+
+    coldAjax("get",'php/projectRetriever.php',fillProj);
 })();
