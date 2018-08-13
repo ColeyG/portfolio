@@ -8,20 +8,11 @@
 
   var drops=[];
   var gravity=.1;
-  var dropletAmount=1000;
-  var gravDir=90;
+  //new code for droplet amount
+  var dropletAmount=window.innerWidth;
+  console.log(dropletAmount);
   var dropWidth=1;
   var dropHeight=20;
-
-  function dropletRotation(x,y,height,width,deg){
-      var rad = deg * Math.PI / 180;
-      c.translate(x + width / 2, y + height / 2);
-      c.rotate(rad);   
-      c.fillStyle="rgba(255,255,255,.3)";
-      c.fillRect(width / 2 * (-1),height / 2 * (-1),width,height);
-      c.rotate(rad * ( -1 ) );
-      c.translate((x + width / 2) * (-1), (y + height / 2) * (-1));
-  }
 
   function Droplet(x,y,speed,initialSpeed){
       this.x=x;
@@ -29,7 +20,8 @@
       this.speed=initialSpeed;
       this.initialSpeed=initialSpeed;
       this.draw=function(){
-          dropletRotation(this.x,this.y,dropWidth,dropHeight,gravDir);
+          c.fillStyle="rgba(255,255,255,.3)";
+          c.fillRect(this.x,this.y,dropWidth,dropHeight);
       }
       this.update=function(){
           this.y=this.y+this.speed;
