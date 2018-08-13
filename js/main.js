@@ -50,10 +50,12 @@
             let bgCard=document.querySelector('#card_'+[i]);
             bgCard.style.backgroundImage="url("+respD[i].image+")";
         }
-        let cardsElement=document.querySelectorAll('.cardCold');
+        setTimeout(function (){
+            let cardsElement=document.querySelectorAll('.cardCold');
         cardsElement.forEach(element => {
             element.style.opacity='0.9';
         });
+        },500);
     }
 
     coldAjax("get",'php/projectRetriever.php',fillProj);
