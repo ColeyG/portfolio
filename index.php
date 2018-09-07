@@ -54,6 +54,9 @@ if(isset($_POST['submitBut'])){
 <body>
 <p id="check" class="hidden"><?php echo $check?></p>
 <h2 class="hidden">Canvas</h2>
+<div class="overlay">
+    
+</div>
 <canvas id="canvas"></canvas>
 <section id="onTop">
     <h2 class="hidden">On Top of Canvas</h2>
@@ -151,7 +154,7 @@ if(isset($_POST['submitBut'])){
             <p class="italics formLabel">email:</p>
             <input placeholder="email123@gmail.com" class="input red" type="text" name="email" maxlength="150" size="40">
             <p class="italics formLabel">message:</p>
-            <textarea placeholder="What is your perogative?" class="input blue" name="message" maxlength="1500" cols="40" rows="8"></textarea>
+            <textarea placeholder="What does your heart desire?" class="input blue" name="message" maxlength="1500" cols="40" rows="8"></textarea>
             <textarea placeholder="Where is the css?" class="hidden" name="address" maxlength="1500" cols="30" rows="8"></textarea>
             <input id="submitButton" class="input" type="submit" value="Submit" name="submitBut">
         </form>

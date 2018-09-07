@@ -37,12 +37,11 @@
         let respD=JSON.parse(data);
         let cards='';
         for(i=0;i<respD.entries;i++){
-            let card="<a href="+respD[i].link+" class='cardColdLink'>";
+            let card="<a href='#' class='cardColdLink'>";
             card+="<div class='cardCold' id=card_"+[i]+"><h2 class='cardColdTitle'>"+respD[i].title+"</h2>";
             card+="<p class='cardColdSlug'>"+respD[i].slug+"</p></div></a>";
 
             cards+=card;
-            //console.log(card);
         }
         let cardBanner=document.querySelector('.cardBanner');
         cardBanner.innerHTML=cards;
@@ -50,12 +49,25 @@
             let bgCard=document.querySelector('#card_'+[i]);
             bgCard.style.backgroundImage="url("+respD[i].image+")";
         }
+
+        let linkSet=document.querySelectorAll('.cardColdLink');
+
+        linkSet.forEach(element => {
+            element.addEventListener('click',descriptorArea,false);
+        });
+
         setTimeout(function (){
             let cardsElement=document.querySelectorAll('.cardCold');
-        cardsElement.forEach(element => {
-            element.style.opacity='0.9';
-        });
+            cardsElement.forEach(element => {
+                element.style.opacity='0.9';
+            });
         },500);
+    }
+
+    function descriptorArea(e){
+        e.preventDefault();
+        let areaControl=document.querySelector('.overlay');
+        areaControl.style.opacity='.5';
     }
 
     coldAjax("get",'php/projectRetriever.php',fillProj);

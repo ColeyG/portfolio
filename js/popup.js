@@ -22,6 +22,6 @@
         document.getElementById('popCloseHook').innerHTML="Back";
         popup();
         popdownButton.addEventListener("click",popdown,false);
-        document.getElementById('popTextHook').innerHTML="Unfortunately, the form has failed to submit. Either a field wasn't filled out or there was an error on the backend. Please go back and try again.";
+        document.getElementById('popTextHook').innerHTML="Unfortunately, the form has failed to submit. Either a field wasn't filled out or there was an error. Please go back and try again.";
     }
 })();
